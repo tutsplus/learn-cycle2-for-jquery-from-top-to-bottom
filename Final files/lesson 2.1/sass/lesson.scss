@@ -1,0 +1,17 @@
+.cycle-slideshow {
+    width: 100%;
+    position: relative;
+}
+
+.cycle-slideshow img {
+    width: 100%;
+}
+
+.cycle-caption {
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    z-index: 1000;
+    background-color: #fff;
+    padding: 1em;
+}

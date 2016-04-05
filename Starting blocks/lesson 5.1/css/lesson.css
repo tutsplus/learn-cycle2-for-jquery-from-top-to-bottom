@@ -1,0 +1,40 @@
+.cycle-slideshow {
+  width: 100%; }
+  .cycle-slideshow img {
+    width: 100%;
+    height: auto; }
+
+.cycle-prev,
+.cycle-next {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 1em;
+  position: absolute;
+  top: 50%;
+  margin-top: -.5em;
+  z-index: 1000;
+  cursor: pointer; }
+  .cycle-prev:hover,
+  .cycle-next:hover {
+    background-color: white; }
+
+.cycle-prev {
+  left: 1em; }
+
+.cycle-next {
+  right: 1em; }
+
+.cycle-pager {
+  position: absolute;
+  bottom: 1em;
+  z-index: 1000;
+  text-align: center;
+  width: 100%; }
+  .cycle-pager span {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 3em;
+    cursor: pointer;
+    margin: .25em; }
+    .cycle-pager span:hover {
+      color: rgba(255, 255, 255, 0.8); }
+    .cycle-pager span.cycle-pager-active {
+      color: white; }

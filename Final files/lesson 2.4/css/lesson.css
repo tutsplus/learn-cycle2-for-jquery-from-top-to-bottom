@@ -1,0 +1,15 @@
+.cycle-slideshow {
+  width: 100%;
+  position: relative; }
+  .cycle-slideshow.cycle-paused:after {
+    content: "Paused";
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    padding: 1em;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    z-index: 1000; }
+
+.cycle-slideshow img {
+  width: 100%; }

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Learn Cycle2 from Top to Bottom</title>
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="../master/bower_components/normalize-css/normalize.css">
+        <link rel="stylesheet" href="../master/css/master.css">
+        <link rel="stylesheet" href="../lesson 5.1/css/lesson.css">
+    </head>
+    <body>
+
+        <section>
+            <div class="wrapper">
+                <div class="cycle-slideshow"
+                    data-cycle-timeout="1000"
+                    data-cycle-delay="1000"
+                    data-cycle-allow-wrap="true"
+                    data-cycle-disabled-class="custom-disabled"
+                    data-cycle-log="false"
+                    data-cycle-loop="2"
+                    data-cycle-fx="scrollHorz"
+                    data-cycle-speed="1000"
+                    data-cycle-manual-trump="false"
+                    data-cycle-next-event="mouseover"
+                    data-cycle-prev-event="mouseout"
+                    data-cycle-pager=".custom-pager"
+                    data-cycle-pager-template=""
+                    data-cycle-pager-event-bubble="true"
+                    data-cycle-paused="false"
+                    data-cycle-random="false"
+                    data-cycle-starting-slide="1"
+                    data-cycle-sync="false"
+                    >
+                    <img src="../master/img/slide-1.jpg" alt="Slide image">
+                    <img src="../master/img/slide-2.jpg" alt="Slide image">
+                    <img src="../master/img/slide-3.jpg" alt="Slide image">
+                    <img src="../master/img/slide-4.jpg" alt="Slide image">
+
+                    <div class="cycle-prev">Previous</div>
+                    <div class="cycle-next">Next</div>
+
+                    <div class="cycle-pager"></div>
+                </div> <!-- end cycle-slideshow -->
+
+                <div class="custom-pager">
+                    <div class="pager-comp">
+                        <p><strong>A day in the park</strong></p>
+                        <p><a href="http://tutsplus.com">Grab the original image here.</a></p>
+                    </div> <!-- end pager-comp -->
+                    <div class="pager-comp">
+                        <p><strong>Summer</strong></p>
+                        <p><a href="http://tutsplus.com">Grab the original image here.</a></p>
+                    </div> <!-- end pager-comp -->
+                    <div class="pager-comp">
+                        <p><strong>Leaves</strong></p>
+                        <p><a href="http://tutsplus.com">Grab the original image here.</a></p>
+                    </div> <!-- end pager-comp -->
+                    <div class="pager-comp">
+                        <p><strong>Seaside</strong></p>
+                        <p><a href="http://tutsplus.com">Grab the original image here.</a></p>
+                    </div> <!-- end pager-comp -->
+                </div> <!-- end custom-pager -->
+            </div> <!-- end wrapper -->
+        </section>
+
+        <!-- JavaScript -->
+        <script src="../master/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="../master/bower_components/jquery-cycle2/build/jquery.cycle2.min.js"></script>
+
+    </body>
+</html>

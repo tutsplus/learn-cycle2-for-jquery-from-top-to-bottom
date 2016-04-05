@@ -1,0 +1,18 @@
+.cycle-slideshow {
+    width: 100%;
+    perspective: 100px;
+    transform-style: preserve-3d;
+
+    &.small {
+        width: 50%;
+
+        img {
+            position: absolute;
+        }
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}

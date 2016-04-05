@@ -1,0 +1,35 @@
+.cycle-slideshow {
+  width: 100%;
+  position: relative; }
+
+.cycle-slideshow img {
+  width: 100%; }
+
+.cycle-pager {
+  position: absolute;
+  bottom: 1em;
+  z-index: 1000;
+  text-align: center;
+  width: 100%; }
+  .cycle-pager span {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 3em;
+    cursor: pointer;
+    margin: .25em; }
+    .cycle-pager span:hover {
+      color: rgba(255, 255, 255, 0.8); }
+    .cycle-pager span.cycle-pager-active {
+      color: white; }
+
+.custom-pager {
+  text-align: center;
+  margin-top: 2em; }
+  .custom-pager .thumbnail {
+    margin: .5em; }
+    .custom-pager .thumbnail img {
+      width: 3em;
+      height: auto; }
+
+#my-pager img {
+  width: 3em;
+  height: auto; }

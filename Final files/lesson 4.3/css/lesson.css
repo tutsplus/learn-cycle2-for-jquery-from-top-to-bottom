@@ -1,0 +1,11 @@
+.cycle-slideshow {
+  width: 100%; }
+  .cycle-slideshow img {
+    width: 100%;
+    height: auto; }
+
+.controls {
+  text-align: center;
+  padding: 1em; }
+  .controls a {
+    margin: 1em; }

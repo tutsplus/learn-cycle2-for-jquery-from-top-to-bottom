@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Learn Cycle2 from Top to Bottom</title>
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="../master/bower_components/normalize-css/normalize.css">
+        <link rel="stylesheet" href="../master/css/master.css">
+        <link rel="stylesheet" href="../lesson 4.6/css/lesson.css">
+    </head>
+    <body>
+
+        <section>
+            <div class="wrapper">
+                <div class="cycle-slideshow"
+                    data-cycle-prev=".prev"
+                    data-cycle-next=".next"
+                    data-cycle-slides="a, img"
+                    data-cycle-timeout="0"
+                    data-cycle-auto-height="calc"
+                    data-cycle-youtube="true"
+                    data-cycle-fx="scrollHorz"
+                    data-cycle-youtube-autostart="true"
+                    data-cycle-youtube-autostop="true"
+                    data-cycle-youtube-allow-full-screen="false"
+                    >
+                    <a href="https://www.youtube.com/v/0Jb6sriW7yY">A Freelancer's Quick Guide to Finances: Introduction</a>
+                    <a href="https://www.youtube.com/v/1pqYRxHWvxY">Illustrator in 60 Seconds: How to Use the Artboards Panel</a>
+                    <img src="../master/img/slide-1.jpg" alt="Slide image">
+                    <img src="../master/img/slide-2.jpg" alt="Slide image">
+                </div> <!-- end cycle-slideshow -->
+
+                <div class="controls">
+                    <span class="prev">&larr; Previous</span>
+                    <span class="next">Next &rarr;</span>
+                </div> <!-- end controls -->
+            </div> <!-- end wrapper -->
+        </section>
+
+        <!-- JavaScript -->
+        <script src="../master/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="../master/bower_components/jquery-cycle2/build/jquery.cycle2.min.js"></script>
+        <script src="../master/js/cycle2-plugins/jquery.cycle2.video.min.js"></script>
+
+    </body>
+</html>

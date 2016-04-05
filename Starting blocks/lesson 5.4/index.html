@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Learn Cycle2 from Top to Bottom</title>
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="../master/bower_components/normalize-css/normalize.css">
+        <link rel="stylesheet" href="../master/css/master.css">
+        <link rel="stylesheet" href="../lesson 5.4/css/lesson.css">
+    </head>
+    <body>
+
+        <section>
+            <div class="wrapper">
+                <div class="cycle-slideshow"
+                    data-cycle-timeout="2500"
+                    data-cycle-log="false"
+                    >
+                    <img src="../master/img/slide-1.jpg" alt="Slide image">
+                    <img src="../master/img/slide-2.jpg" alt="Slide image">
+                    <img src="../master/img/slide-3.jpg" alt="Slide image">
+                    <img src="../master/img/slide-4.jpg" alt="Slide image">
+
+                    <div class="cycle-prev">Previous</div>
+                    <div class="cycle-next">Next</div>
+
+                    <div class="cycle-pager"></div>
+                </div> <!-- end cycle-slideshow -->
+
+                <ul class="commands">
+                    <li><button id="com-add" data-cycle-cmd="add" data-cycle-arg="<img src='../master/img/slide-2.jpg' alt='Slide image'>">Add a slide</button></li>
+                    <!-- <li><button id="com-add">Add a slide</button></li> -->
+                    <li><button id="com-destroy" data-cycle-cmd="destroy">Destroy slideshow</button></li>
+                    <li><button id="com-next" data-cycle-cmd="next">Next slide</button></li>
+                    <li><button id="com-prev" data-cycle-cmd="prev">Previous slide</button></li>
+                    <li><button id="com-goto" data-cycle-cmd="goto" data-cycle-arg="2">Goto slide</button></li>
+                    <li><button id="com-pause" data-cycle-cmd="pause">Pause slideshow</button></li>
+                    <li><button id="com-resume" data-cycle-cmd="resume">Resume slideshow</button></li>
+                    <li><button id="com-stop" data-cycle-cmd="stop">Stop slideshow</button></li>
+                    <li><button id="com-reinit" data-cycle-cmd="reinit">Reinitialize slideshow</button></li>
+                    <li><button id="com-remove" data-cycle-cmd="remove" data-cycle-arg="0">Remove a slide</button></li>
+                </ul>
+            </div> <!-- end wrapper -->
+        </section>
+
+        <!-- JavaScript -->
+        <script src="../master/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="../master/bower_components/jquery-cycle2/build/jquery.cycle2.min.js"></script>
+
+        <script>
+            $( function() {
+                var $slideshow = $( ".cycle-slideshow" );
+
+                $slideshow.on( 'cycle-after', function( event, optionHash, outgoingSlideEl, incomingSlideEl, forwardFlag ) {
+                    console.log( "Cycle: <after> event triggered." );
+                } );
+
+                $slideshow.on( 'cycle-before', function( event, optionHash, outgoingSlideEl, incomingSlideEl, forwardFlag ) {
+                    console.log( "Cycle: <before> event triggered." );
+                } );
+
+                $slideshow.on( 'cycle-bootstrap', function( event, optionHash, API ) {
+                    console.log( "Cycle: <bootstrap> event triggered." );
+                } );
+
+                $slideshow.on( 'cycle-destroyed', function( event, optionHash ) {
+                    console.log( "Cycle: <destroyed> event triggered." );
+                } );
+
+                $slideshow.on( 'cycle-finished', function( event, optionHash ) {
+                    console.log( "Cycle: <finished> event triggered." );
+                } );
+
+                $slideshow.on( 'cycle-initialized', function( event, optionHash ) {
+                    console.log( "Cycle: <initialized> event triggered." );
+                } );
+
+                $slideshow.on( 'cycle-next', function( event, optionHash ) {
+                    console.log( "Cycle: <next> event triggered." );
+                } );
+
+                $slideshow.on( 'cycle-pager-activated', function( event, optionHash ) {
+                    console.log( "Cycle: <pager-activated> event triggered." );
+                } );
+
+                $slideshow.on( 'cycle-paused', function( event, optionHash ) {
+                    console.log( "Cycle: <paused> event triggered." );
+                } );
+
+                $slideshow.on( 'cycle-post-initialize', function( event, optionHash ) {
+                    console.log( "Cycle: <post-initialize> event triggered." );
+                } );
+
+                $slideshow.on( 'cycle-pre-initialize', function( event, optionHash ) {
+                    console.log( "Cycle: <pre-initialize> event triggered." );
+                } );
+
+                $slideshow.on( 'cycle-prev', function( event, optionHash ) {
+                    console.log( "Cycle: <prev> event triggered." );
+                } );
+
+                $slideshow.on( 'cycle-resumed', function( event, optionHash ) {
+                    console.log( "Cycle: <resumed> event triggered." );
+                } );
+
+                $slideshow.on( 'cycle-slide-added', function( event, jQueryWrappedSlideEl ) {
+                    console.log( "Cycle: <slide-added> event triggered." );
+                } );
+
+                $slideshow.on( 'cycle-slide-removed', function( event, indexOfSlideRemoved, removedSlideEl ) {
+                    console.log( "Cycle: <slide-removed> event triggered." );
+                } );
+
+                $slideshow.on( 'cycle-stopped', function( event, optionHash ) {
+                    console.log( "Cycle: <stopped> event triggered." );
+                } );
+
+                $slideshow.on( 'cycle-transition-stopped', function( event, optionHash ) {
+                    console.log( "Cycle: <transition-stopped> event triggered." );
+                } );
+
+                $slideshow.on( 'cycle-update-view', function( event, optionHash, slideOptionsHash, currentSlideEl ) {
+                    console.log( "Cycle: <update-view> event triggered." );
+                } );
+            } );
+        </script>
+
+    </body>
+</html>

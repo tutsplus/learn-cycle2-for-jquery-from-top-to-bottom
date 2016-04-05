@@ -1,0 +1,11 @@
+.cycle-slideshow {
+  width: 100%;
+  perspective: 100px;
+  transform-style: preserve-3d; }
+  .cycle-slideshow.small {
+    width: 50%; }
+    .cycle-slideshow.small img {
+      position: absolute; }
+  .cycle-slideshow img {
+    width: 100%;
+    height: auto; }

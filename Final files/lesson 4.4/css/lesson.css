@@ -1,0 +1,33 @@
+.cycle-slideshow {
+  width: 100%; }
+  .cycle-slideshow img {
+    width: 100%;
+    height: auto; }
+  .cycle-slideshow.small {
+    border: 1px solid #ccc;
+    background-color: #eaeaea;
+    height: 500px;
+    width: 75%;
+    margin: auto; }
+    .cycle-slideshow.small img {
+      width: 75%; }
+
+.cycle-caption {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  z-index: 1000;
+  background-color: #fff;
+  padding: 1em; }
+
+.cycle-overlay {
+  position: absolute;
+  bottom: 0;
+  padding: 2em;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  z-index: 1000;
+  width: 100%; }
+  .cycle-overlay div:first-child {
+    font-weight: bold;
+    margin-bottom: 1em; }

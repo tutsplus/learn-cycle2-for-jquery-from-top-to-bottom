@@ -1,0 +1,31 @@
+.cycle-slideshow {
+    width: 100%;
+    position: relative;
+}
+
+.cycle-slideshow img {
+    width: 100%;
+}
+
+.cycle-prev,
+.cycle-next {
+    background-color: rgba(255, 255, 255, .5);
+    padding: 1em;
+    position: absolute;
+    top: 50%;
+    margin-top: -.5em;
+    z-index: 1000;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 1);
+    }
+}
+
+.cycle-prev {
+    left: 1em;
+}
+
+.cycle-next {
+    right: 1em;
+}

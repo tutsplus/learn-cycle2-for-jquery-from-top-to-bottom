@@ -1,0 +1,50 @@
+.cycle-slideshow {
+    width: 100%;
+    position: relative;
+}
+
+.cycle-slideshow img {
+    width: 100%;
+}
+
+.cycle-pager {
+    position: absolute;
+    bottom: 1em;
+    z-index: 1000;
+    text-align: center;
+    width: 100%;
+
+    span {
+        color: rgba(255, 255, 255, .5);
+        font-size: 3em;
+        cursor: pointer;
+        margin: .25em;
+
+        &:hover {
+            color: rgba(255, 255, 255, .8);
+        }
+
+        &.cycle-pager-active {
+            color: rgba(255, 255, 255, 1);
+        }
+    }
+}
+
+.custom-pager {
+    text-align: center;
+    margin-top: 2em;
+
+    .thumbnail {
+        margin: .5em;
+
+        img {
+            width: 3em;
+            height: auto;
+        }
+    }
+}
+
+#my-pager img {
+    width: 3em;
+    height: auto;
+}

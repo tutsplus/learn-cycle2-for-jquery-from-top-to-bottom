@@ -1,0 +1,24 @@
+.cycle-slideshow {
+  width: 100%; }
+  .cycle-slideshow img {
+    width: 10em;
+    height: auto;
+    margin: .5em; }
+
+.custom-pager {
+  float: left; }
+  .custom-pager span {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 3em;
+    cursor: pointer;
+    margin: .25em; }
+    .custom-pager span:hover {
+      color: rgba(0, 0, 0, 0.8); }
+    .custom-pager span.cycle-pager-active {
+      color: black; }
+
+.controls {
+  text-align: right;
+  padding: 1em; }
+  .controls a {
+    margin: 1em; }

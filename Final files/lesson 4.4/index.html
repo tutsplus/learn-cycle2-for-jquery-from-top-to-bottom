@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Learn Cycle2 from Top to Bottom</title>
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="../master/bower_components/normalize-css/normalize.css">
+        <link rel="stylesheet" href="../master/css/master.css">
+        <link rel="stylesheet" href="../lesson 4.4/css/lesson.css">
+    </head>
+    <body>
+
+        <section>
+            <div class="wrapper">
+                <div class="cycle-slideshow small"
+                    data-cycle-center-horz="true"
+                    data-cycle-center-vert="true"
+                    >
+                    <img src="../master/img/slide-1.jpg" alt="Slide image">
+                    <img src="../master/img/slide-2.jpg" alt="Slide image">
+                    <img src="../master/img/slide-3.jpg" alt="Slide image">
+                    <img src="../master/img/slide-4.jpg" alt="Slide image">
+                </div> <!-- end cycle-slideshow -->
+
+                <hr>
+
+                <div class="cycle-slideshow"
+                    data-cycle-caption-plugin="caption2"
+                    data-cycle-caption-fx-out="slideUp"
+                    data-cycle-caption-fx-in="slideDown"
+                    data-cycle-overlay-fx-out="slideUp"
+                    data-cycle-overlay-fx-in="slideDown"
+                    data-cycle-caption-fx-sel=""
+                    data-cycle-overlay-fx-sel=">div"
+                    >
+                    <div class="cycle-caption"></div>
+
+                    <img src="../master/img/slide-1.jpg" alt="Slide image" data-cycle-title="Park" data-cycle-desc="A sunny day in the park">
+                    <img src="../master/img/slide-2.jpg" alt="Slide image" data-cycle-title="Summer" data-cycle-desc="A gold, lush, summer view">
+                    <img src="../master/img/slide-3.jpg" alt="Slide image" data-cycle-title="Leaves" data-cycle-desc="Perfect for a desktop background">
+                    <img src="../master/img/slide-4.jpg" alt="Slide image" data-cycle-title="Seaside" data-cycle-desc="Gorgeous view of the seaside">
+
+                    <div class="cycle-overlay"></div> <!-- end cycle-overlay -->
+                </div> <!-- end cycle-slideshow -->
+            </div> <!-- end wrapper -->
+        </section>
+
+        <!-- JavaScript -->
+        <script src="../master/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="../master/bower_components/jquery-cycle2/build/jquery.cycle2.min.js"></script>
+        <script src="../master/js/cycle2-plugins/jquery.cycle2.center.min.js"></script>
+        <script src="../master/js/cycle2-plugins/jquery.cycle2.caption2.min.js"></script>
+
+    </body>
+</html>
